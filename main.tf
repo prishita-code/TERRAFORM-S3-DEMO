@@ -21,7 +21,7 @@ resource "aws_s3_bucket" "my_bucket" {
     bucket = "my-unique-bucket-${random_id.bucket_id.hex}"
 
     tags = {
-        Name        = "My terraform test bucket"
+        Name        = "My_terraform_test_bucket"
     }
     force_destroy = true
 }
